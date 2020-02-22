@@ -2,10 +2,20 @@ package come.epam.hometask;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Все книги:");
-        Books books = new Books();
-        books.printBooks();
+    System.out.println("Все книги:");
+         Book[] books = new Book[]{
+                new Book(101, "Java", "Ivanhoe", "Kiev",
+                        2010, 700, 250),
+                new Book(102, "PHP", "Ivanhoe", "London",
+                        2017, 250, 200),
+                new Book(103, "JavaScript", "Ivanov", "New York",
+                        2012, 280, 400),
+                new Book(104, "C#", "Kolesnik", "Berlin",
+                        2013, 450, 500),
+                new Book(105, "SQL", "Davidova", "Milan",
+                        2019, 300, 700),
+                new Book(106, "C++", "Kovalov", "Lviv",
+                        2020, 500, 350)};
         System.out.println("-------------------------------------------------------");
 
         System.out.print("Введите год для отбора книги: ");
